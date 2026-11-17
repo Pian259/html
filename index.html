@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biodata  Achmad Junaedi</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#3b82f6);
+    padding:20px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+}
+
+.header{
+    background:linear-gradient(90deg,#007bff,#00c6ff);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.header h1{
+    margin-bottom:8px;
+}
+
+img{
+    display:block;
+    margin:20px auto;
+    width:180px;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    border:5px solid #007bff;
+}
+
+.menu{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+button{
+    padding:12px 22px;
+    margin:5px;
+    border:none;
+    border-radius:30px;
+    background:#007bff;
+    color:white;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#0056b3;
+    transform:scale(1.05);
+}
+
+.content{
+    padding:20px;
+}
+
+.section{
+    display:none;
+    animation:muncul .5s;
+}
+
+@keyframes muncul{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+td{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+}
+
+ul{
+    margin-left:20px;
+}
+
+progress{
+    width:100%;
+    height:20px;
+    margin-bottom:15px;
+}
+
+.footer{
+    background:#f1f1f1;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function tampil(id){
+document.getElementById("tentang").style.display="none";
+document.getElementById("identitas").style.display="none";
+document.getElementById("pengalaman").style.display="none";
+document.getElementById("skill").style.display="none";
+
+document.getElementById(id).style.display="block";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>BIODATA DIRI</h1>
+<p>IT Support | Network Engineer</p>
+</div>
+
+<img src="https://cdn.phototourl.com/free/2026-08-06-f52362d0-0023-4cc3-bedf-eedd47e31ad3.jpg" alt="Foto">
+
+<div class="menu">
+<button onclick="tampil('tentang')"><i class="fa fa-user"></i> Tentang Saya</button>
+<button onclick="tampil('identitas')"><i class="fa fa-id-card"></i> Identitas</button>
+<button onclick="tampil('pengalaman')"><i class="fa fa-briefcase"></i> Pengalaman</button>
+<button onclick="tampil('skill')"><i class="fa fa-laptop-code"></i> Skill</button>
+</div>
+
+<div class="content">
+
+<div id="tentang" class="section" style="display:block;">
+<h2><i class="fa fa-user"></i> Tentang Saya</h2>
+<br>
+<p>
+Saya adalah siswa SMK jurusan Teknik Komputer dan Jaringan (TKJ) yang memiliki minat di bidang IT Support, jaringan komputer, troubleshooting, serta instalasi perangkat komputer. Saya senang mempelajari teknologi baru, mampu bekerja secara individu maupun tim, dan siap mengembangkan kemampuan di dunia teknologi informasi.
+</p>
+</div>
+
+<div id="identitas" class="section">
+<h2><i class="fa fa-id-card"></i> Identitas</h2>
+<br>
+
+<table>
+<tr><td>Nama</td><td>: Achmad junaedi</td></tr>
+<tr><td>Tempat, Tanggal Lahir</td><td>: Jombang 9 JANUARI 2009</td></tr>
+<tr><td>Jenis Kelamin</td><td>: Laki-laki</td></tr>
+<tr><td>Alamat</td><td>: Jombang, Jawa Timur</td></tr>
+<tr><td>Agama</td><td>: Islam</td></tr>
+<tr><td>Status</td><td>: Pelajar</td></tr>
+<tr><td>Sekolah</td><td>: SMK Jurusan TKJ</td></tr>
+<tr><td>Email</td><td>: boss.nedi007@google.com</td></tr>
+<tr><td>No. HP</td><td>: 085649865620</td></tr>
+<tr><td>Hobi</td><td>: Komputer, Jaringan, Trading, Renang</td></tr>
+<tr><td>Cita-cita</td><td>: IT Support / Network Engineer</td></tr>
+</table>
+
+</div>
+
+<div id="pengalaman" class="section">
+<h2><i class="fa fa-briefcase"></i> Pengalaman</h2>
+<br>
+
+<ul>
+<li>Magang IT Support di Aston Mojokerto Hotel & Conference Center.</li>
+<li>Instalasi dan konfigurasi jaringan komputer.</li>
+<li>Troubleshooting komputer, printer, dan jaringan.</li>
+<li>Maintenance perangkat komputer.</li>
+<li>Instalasi sistem operasi Windows.</li>
+<li>Membantu pengguna dalam penyelesaian masalah IT.</li>
+</ul>
+
+</div>
+
+<div id="skill" class="section">
+<h2><i class="fa fa-laptop-code"></i> Skill</h2>
+<br>
+
+<p>HTML</p>
+<progress value="80" max="100"></progress>
+
+<p>IT Support</p>
+<progress value="90" max="100"></progress>
+
+<p>Troubleshooting Komputer</p>
+<progress value="90" max="100"></progress>
+
+<p>Jaringan LAN</p>
+<progress value="85" max="100"></progress>
+
+<p>Microsoft Office</p>
+<progress value="85" max="100"></progress>
+
+<p>Instalasi Windows</p>
+<progress value="90" max="100"></progress>
+
+</div>
+
+</div>
+
+<div class="footer">
+© 2026 Achmad Junaedi| Biodata HTML
+</div>
+
+</div>
+
+</body>
+</html>
